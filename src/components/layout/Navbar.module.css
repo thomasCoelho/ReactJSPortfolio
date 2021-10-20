@@ -1,0 +1,89 @@
+.sidebar{
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: "Poppins";
+    transform: translateX(-100%);
+    transition: transform 280ms ease;
+    background-color: white;
+    z-index: 10;
+}
+
+.open{
+    transform: translateX(0%);
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    padding: 0px;
+    align-items: center;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    width: 100px;
+}
+
+.sidebar ul li figure{
+    background-image: url(../../assets/images/layout/avatar-xs.jpg);
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.sidebar ul li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.chevron{
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    cursor:pointer;
+}
+
+.hidden-chevron{
+    display: none;
+}
+
+.open .chevron {
+    transform: rotate(180deg);
+}
+
+
+@media (min-width: 992px) {
+	.sidebar{
+        width: 290px;
+        background-color: #f2f3f7;
+    }
+	
+	.sidebar ul li figure{
+        background-image: url(../../assets/images/layout/avatar-s.jpg);
+        width: 200px;
+        height: 200px;
+    }
+
+    .sidebar ul {
+        height: 50vh;
+    }
+
+    .sidebar ul li{
+        width: 200px;
+    }
+ }

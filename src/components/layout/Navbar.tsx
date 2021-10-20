@@ -1,7 +1,8 @@
+import s from './Navbar.module.css'
 import avatar from '../assets/images/avatar-xs.jpg'
 import * as Icon from 'react-feather';
 import { useContext, useEffect } from 'react';
-import {NavbarContext} from '../context/NavbarContext';
+import {NavbarContext} from '../../context/NavbarContext';
 import { useMediaQuery } from 'react-responsive'
 
 const Navbar = () => {
@@ -14,7 +15,12 @@ const Navbar = () => {
     }, [desktop])
     
     return(
-        <nav className={sideBarVisible ? "open" : "close"}>
+        <nav 
+            className={`
+                ${s.sidebar}
+                ${sideBarVisible ? s.open : s.close}
+            `}
+        >
             <ul>
                 <li><figure></figure></li>
                 <li><a href = "#">Accueil</a></li>
@@ -22,7 +28,9 @@ const Navbar = () => {
                 <li><a href = "#">Contact</a></li>
                 {
                     !desktop && 
-                        <Icon.ChevronRight className="chevron" onClick={() => setSideBarVisible(!sideBarVisible) } />
+                    <>
+                        <Icon.ChevronRight className={s.chevron} onClick={() => setSideBarVisible(!sideBarVisible) } />
+                    </>
                 }
             </ul>
         </nav>

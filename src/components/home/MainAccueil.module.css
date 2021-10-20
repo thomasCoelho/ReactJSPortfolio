@@ -1,0 +1,68 @@
+.mainAccueilSection {
+    height: 100vh;    
+}
+
+.mainAccueilSection div{
+    position: absolute;
+    font-family: "Poppins";
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    bottom: 10vh;
+    left: 7.5%;
+    background: rgba(255,255,255,0.3);
+    z-index: 5;
+}
+
+.mainAccueilSection div h2{
+    font-size: 1.8rem;
+}
+
+.mainAccueilSection div p{
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.mainAccueilSection div a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid black;
+    margin: 23px auto 10px;
+}
+
+.mainAccueilSection figure{
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainAccueilSection img{
+    transform: scaleX(-1);
+    height: 100vh;
+    width: auto;
+}
+
+@media (min-width: 992px) { 
+    .mainAccueilSection div{
+        width: 30%;
+        left: 320px;
+        background: transparent;
+        top: 30vh;
+        text-align: left;
+    }
+
+    .mainAccueilSection div h2{
+        letter-spacing: 1.5px;
+        font-size: 2.8rem;
+    }
+
+    .mainAccueilSection div p{
+        line-height: 25px;
+    }
+}
