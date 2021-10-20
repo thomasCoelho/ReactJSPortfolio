@@ -7,11 +7,13 @@
     font-family: "Poppins";
     text-align: center;
     margin: auto;
+    padding: 10px 20px;
     width: 85%;
     bottom: 10vh;
     left: 7.5%;
     background: rgba(255,255,255,0.3);
     z-index: 5;
+    box-sizing: border-box;
 }
 
 .mainAccueilSection div h2{
@@ -27,11 +29,15 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 16px;
     padding: 10px 20px;
     background: transparent;
     border: 1px solid black;
     margin: 23px auto 10px;
+}
+
+.mainAccueilSection div a:hover{
+    transform: scale(1.1);
 }
 
 .mainAccueilSection figure{
@@ -51,7 +57,7 @@
 @media (min-width: 992px) { 
     .mainAccueilSection div{
         width: 30%;
-        left: 320px;
+        left: 60px;
         background: transparent;
         top: 30vh;
         text-align: left;

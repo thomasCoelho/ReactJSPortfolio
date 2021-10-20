@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import MainAccueil from '../components/home/MainAccueil'
-import Card from '../components/layout/Card'
+import Card from '../components/home/Card'
 import s from './Home.module.css'
 
 

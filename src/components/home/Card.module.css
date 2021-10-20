@@ -1,0 +1,37 @@
+.card{
+    width: 250px;
+    margin: 40px auto 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card figure{
+    margin: 0px;
+    max-height: 250px;
+}
+
+.card figure img{
+    height: 250px;
+    width: 250px;
+}
+
+.card p{
+    box-sizing: border-box;
+    width: 250px;
+    min-height: 100px;
+    background-color: white;
+    margin: 0px;
+    padding: 10px;
+    color: black;
+    font-family: "Poppins";
+    font-size: 16px;
+    background-color: #f2f3f7;
+
+}

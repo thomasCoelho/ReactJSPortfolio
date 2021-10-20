@@ -1,0 +1,7 @@
+@media (min-width: 992px) { 
+    .column2{
+        position: relative;
+        left: 290px;
+        width: calc(100% - 290px);
+    }
+}

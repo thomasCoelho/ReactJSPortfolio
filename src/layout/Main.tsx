@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import NavBar from '../components/layout/Navbar'
+import './Main.css'
 
 const MainLayout = ({children} : any) => {
 
@@ -10,9 +11,10 @@ const MainLayout = ({children} : any) => {
 				<NavBar />
 			</div>		 
 			
-			{children}
+			<div className="column2">
+				{children}
+			</div>
 			
-
 		</div>
 	)
 }

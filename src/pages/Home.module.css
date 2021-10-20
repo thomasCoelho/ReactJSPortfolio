@@ -22,7 +22,7 @@
 
 @media (min-width: 992px) { 
     .divHome .divMain{
-        background-position-x: right;
+        background-position-x: center;
         background-image: url(../assets/images/main-m.jpg);
     }
 }
