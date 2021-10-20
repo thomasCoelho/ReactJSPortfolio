@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body, html{
+    overflow-x: hidden;
+}
+
+.column{
+    position: relative;
+    display: flex;
+    background-image: url(../images/main-s.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+nav{
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    font-family: "Poppins";
+    transform: translateX(-100%);
+    transition: transform 280ms ease;
+    background-color: white;
+    z-index: 10;
+}
+
+.open{
+    transform: translateX(0%);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    padding: 0px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    width: 100px;
+}
+
+nav ul li figure{
+    background-image: url(../images/avatar-xs.jpg);
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+nav ul li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.chevron{
+    position: absolute;
+    top: 20px;
+    left: 260px;
+}
+
+.hidden-chevron{
+    display: none;
+}
+
+.open .chevron {
+    transform: rotate(180deg);
+}
+
+.column section {
+    height: 100vh;    
+}
+
+.column section div{
+    position: absolute;
+    font-family: "Poppins";
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    bottom: 10vh;
+    left: 7.5%;
+    background: rgba(255,255,255,0.3);
+    z-index: 5;
+}
+
+.column section div h2{
+    font-size: 1.8rem;
+}
+
+.column section div p{
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.column section div a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid black;
+    margin: 23px auto 10px;
+}
+
+.column section figure{
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+}
+
+.column section img{
+    transform: scaleX(-1);
+    height: 100vh;
+    width: auto;
+}
+
+@media (min-width: 992px) { 
+    .column{
+        background-position-x: right;
+        background-image: url(../images/main-m.jpg);
+    }
+
+    .column nav{
+        width: 250px;
+        background-color: #f2f3f7;
+    }
+
+    nav ul li figure{
+        background-image: url(../images/avatar-s.jpg);
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul {
+        height: 50vh;
+    }
+
+    nav ul li{
+        width: 200px;
+    }
+
+    .column section div{
+        width: 30%;
+        left: 320px;
+        background: transparent;
+        top: 30vh;
+        text-align: left;
+    }
+
+    .column section div h2{
+        letter-spacing: 1.5px;
+        font-size: 2.8rem;
+    }
+
+    .column section div p{
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1700px) { 
+    .column{
+        background-image: url(../images/main-l.jpg);
+    }
+}
