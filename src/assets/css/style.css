@@ -4,28 +4,3 @@ body, html{
     overflow-x: hidden;
 
 }
-
-
-.column{
-    position: relative;
-    display: flex;
-    background-image: url(../images/main-s.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-}
-
-
-
-@media (min-width: 992px) { 
-    .column{
-        background-position-x: right;
-        background-image: url(../images/main-m.jpg);
-    }
-}
-
-@media (min-width: 1700px) { 
-    .column{
-        background-image: url(../images/main-l.jpg);
-    }
-}

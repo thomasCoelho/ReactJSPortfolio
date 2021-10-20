@@ -15,11 +15,11 @@
 }
 
 .mainAccueilSection div h2{
-    font-size: 1.8rem;
+    font-size: 28px;
 }
 
 .mainAccueilSection div p{
-    font-size: 1.2rem;
+    font-size: 16px;
     margin: 0px;
 }
 
@@ -28,7 +28,7 @@
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background: transparent;
     border: 1px solid black;
     margin: 23px auto 10px;

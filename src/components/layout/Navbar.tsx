@@ -1,5 +1,4 @@
 import s from './Navbar.module.css'
-import avatar from '../assets/images/avatar-xs.jpg'
 import * as Icon from 'react-feather';
 import { useContext, useEffect } from 'react';
 import {NavbarContext} from '../../context/NavbarContext';
@@ -29,7 +28,7 @@ const Navbar = () => {
                 {
                     !desktop && 
                     <>
-                        <Icon.ChevronRight className={s.chevron} onClick={() => setSideBarVisible(!sideBarVisible) } />
+                        <Icon.Menu className={s.menu} onClick={() => setSideBarVisible(!sideBarVisible) } />
                     </>
                 }
             </ul>

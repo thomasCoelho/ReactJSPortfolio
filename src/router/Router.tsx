@@ -9,7 +9,7 @@ const Router = () => {
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
 			<Switch>
-				<UnauthenticatedRoute C={Home} layout="MainLayout"/>
+				<UnauthenticatedRoute C={Home} layout="MainLayout" exact path="/" />
 			</Switch>
 		</Suspense>
 	)
