@@ -8,8 +8,8 @@ const Cards = () => {
 
     return(
         <div className={s.fewProjects}>
-			<h2>Quelques Projets</h2>
-            <div>
+			<h1 className="s24">Quelques Projets</h1>
+            <div className="cards-container">
                 {dataCards.map((e) =>
                 <Card img={e.img} href={e.url} description={e.description} />
                 )}

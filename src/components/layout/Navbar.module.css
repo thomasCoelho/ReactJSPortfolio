@@ -72,6 +72,8 @@
 	.sidebar{
         width: 290px;
         background-color: #f2f3f7;
+        -webkit-box-shadow: 3px 0px 15px 0px #f2f3f7; 
+        box-shadow: 3px 0px 15px 0px #f2f3f7;
     }
 	
 	.sidebar ul li figure{

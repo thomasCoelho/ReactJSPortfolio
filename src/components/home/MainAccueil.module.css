@@ -22,33 +22,16 @@
     box-sizing: border-box;
 }
 
-.mainAccueilSection div h2 {
+.mainAccueilSection div h1 {
     font-size: 28px;
 }
 
 .mainAccueilSection div p {
-    font-size: 16px;
     margin: 0px;
 }
 
 .mainAccueilSection div a {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: 1px solid black;
     margin: 23px auto 10px;
-    background: white;
-    background: linear-gradient(to left, white 50%, black 50%) right;
-    background-size: 200%;
-    transition: all .5s ease-out;
-}
-
-.mainAccueilSection div a:hover {
-    color: white;
-    transform: scale(1.1);
-    background-position:left;
 }
 
 .mainAccueilSection figure {

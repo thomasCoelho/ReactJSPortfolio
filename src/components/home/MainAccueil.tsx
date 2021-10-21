@@ -6,10 +6,10 @@ const Home = () => {
 
     return(
         <section className={s.mainAccueilSection}>
-            <div>
-            <h2>I am a Developer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque animi illo.</p>
-            <a href="#">Voir le portfolio</a>
+            <div className="home-main-text">
+                <h1>I am a Developer</h1>
+                <p className="s16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque animi illo.</p>
+                <a className="btn btn-outline btn-anim-left" href="#">Voir le portfolio</a>
             </div>
 
         </section>

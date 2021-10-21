@@ -9,7 +9,7 @@ const Card = ({img, href, description} : any) => {
                 <figure>
                     <img src={img} />
                 </figure>
-                <p>{description}</p>
+                <p className="s16">{description}</p>
             </a>
         </div>
     )

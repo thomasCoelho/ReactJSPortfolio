@@ -2,8 +2,7 @@
     padding: 10vh 0px 5vh;
 }
 
-.fewProjects h2{
-    font-size: 25px;
+.fewProjects h1{
     font-family: "Poppins";
     text-align: center;
 }
@@ -13,4 +12,6 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 50px;
+    max-width: 990px;
 }
