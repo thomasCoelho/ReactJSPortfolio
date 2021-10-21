@@ -27,9 +27,7 @@ const Navbar = () => {
                 <li><a href = "#">Contact</a></li>
                 {
                     !desktop && 
-                    <>
                         <Icon.Menu className={s.menu} onClick={() => setSideBarVisible(!sideBarVisible) } />
-                    </>
                 }
             </ul>
         </nav>

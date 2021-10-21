@@ -1,0 +1,16 @@
+.fewProjects{
+    padding: 10vh 0px 5vh;
+}
+
+.fewProjects h2{
+    font-size: 25px;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.fewProjects > div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}

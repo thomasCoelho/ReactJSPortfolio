@@ -1,8 +1,14 @@
 .mainAccueilSection {
-    height: 100vh;    
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-image: url(../../assets/images/main-s.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
-.mainAccueilSection div{
+.mainAccueilSection div {
     position: absolute;
     font-family: "Poppins";
     text-align: center;
@@ -11,36 +17,41 @@
     width: 85%;
     bottom: 10vh;
     left: 7.5%;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     z-index: 5;
     box-sizing: border-box;
 }
 
-.mainAccueilSection div h2{
+.mainAccueilSection div h2 {
     font-size: 28px;
 }
 
-.mainAccueilSection div p{
+.mainAccueilSection div p {
     font-size: 16px;
     margin: 0px;
 }
 
-.mainAccueilSection div a{
+.mainAccueilSection div a {
     display: inline-block;
     text-decoration: none;
     color: black;
     font-size: 16px;
     padding: 10px 20px;
-    background: transparent;
     border: 1px solid black;
     margin: 23px auto 10px;
+    background: white;
+    background: linear-gradient(to left, white 50%, black 50%) right;
+    background-size: 200%;
+    transition: all .5s ease-out;
 }
 
-.mainAccueilSection div a:hover{
+.mainAccueilSection div a:hover {
+    color: white;
     transform: scale(1.1);
+    background-position:left;
 }
 
-.mainAccueilSection figure{
+.mainAccueilSection figure {
     position: absolute;
     right: 0px;
     margin: 0px;
@@ -48,27 +59,40 @@
     width: 100%;
 }
 
-.mainAccueilSection img{
+.mainAccueilSection img {
     transform: scaleX(-1);
     height: 100vh;
     width: auto;
 }
 
-@media (min-width: 992px) { 
-    .mainAccueilSection div{
+
+@media (min-width: 992px) {
+    
+    .mainAccueilSection{
+        background-position-x: right;
+        background-image: url(../../assets/images/main-m.jpg);
+    }
+
+    .mainAccueilSection div {
         width: 30%;
         left: 60px;
         background: transparent;
         top: 30vh;
         text-align: left;
     }
-
-    .mainAccueilSection div h2{
+    
+    .mainAccueilSection div h2 {
         letter-spacing: 1.5px;
         font-size: 2.8rem;
     }
-
-    .mainAccueilSection div p{
+    
+    .mainAccueilSection div p {
         line-height: 25px;
+    }
+}
+
+@media (min-width: 1700px) { 
+    .mainAccueilSection{
+        background-image: url(../../assets/images/main-l.jpg);
     }
 }
