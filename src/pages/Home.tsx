@@ -8,18 +8,19 @@ import OGImage from '../assets/images/layout/avatar-s.jpg';
 const Home = () => {
 
 	return (
-		<div className={s.divHome}>
+		<>
 			<Helmet>
 				<meta property="og:title" content="Portfolio Thomas Coelho" />
 				<meta property="og:type" content="article" />
 				<meta property="og:description" content="Développeur web PHP/React, découvrir mon portfolio" /> 
 				<meta property="og:image" content={OGImage} />
-            </Helmet>
-			<MainAccueil />
-			<Cards />
+			</Helmet>
 
-
-		</div>
+			<div className={s.divHome}>
+				<MainAccueil />
+				<Cards />
+			</div>
+		</>
 	)
 }
 

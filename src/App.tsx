@@ -8,15 +8,19 @@ import {Helmet} from 'react-helmet';
 function App() {
 
   return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Portfolio Thomas Coelho Développeur web PHP et ReactJS" />
+        <title>Portfolio</title>
+      </Helmet>
+    
       <NavbarContextProvider>
         <div className="App">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>Portfolio</title>
-        </Helmet>
           <AppContainer />
         </div>
       </NavbarContextProvider>
+    </>
   )
 }
 
