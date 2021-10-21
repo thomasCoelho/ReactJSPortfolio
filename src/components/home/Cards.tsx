@@ -10,8 +10,8 @@ const Cards = () => {
         <div className={s.fewProjects}>
 			<h1 className="s24">Quelques Projets</h1>
             <div className="cards-container">
-                {dataCards.map((e) =>
-                <Card img={e.img} href={e.url} description={e.description} />
+                {dataCards.map((e, index) =>
+                <Card img={e.img} href={e.url} description={e.description} key={index} />
                 )}
             </div>
 		</div>
