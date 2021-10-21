@@ -5,10 +5,12 @@
     box-sizing: border-box;
     padding: 20px;
     font-family: "Poppins";
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: transform 280ms ease;
     background-color: white;
     z-index: 10;
+    -webkit-box-shadow: 3px 0px 15px 0px #000000; 
+    box-shadow: 3px 0px 15px 0px #000000;
 }
 
 .open{
@@ -19,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 40vh;
+    height: 300px;
     padding: 0px;
     align-items: center;
 }
@@ -54,10 +56,10 @@
 .menu{
     position: absolute;
     top: 20px;
-    left: 260px;
+    left: 280px;
     cursor:pointer;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 
