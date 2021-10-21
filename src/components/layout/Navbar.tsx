@@ -1,8 +1,9 @@
-import s from './Navbar.module.css'
+import s from './Navbar.module.css';
 import * as Icon from 'react-feather';
 import { useContext, useEffect } from 'react';
 import {NavbarContext} from '../../context/NavbarContext';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import React from 'react';
 
 const Navbar = () => {
 
@@ -34,4 +35,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default React.memo(Navbar)

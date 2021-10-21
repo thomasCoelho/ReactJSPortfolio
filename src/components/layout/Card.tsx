@@ -1,4 +1,5 @@
-import s from './Card.module.css'
+import React from 'react';
+import s from './Card.module.css';
 
 const Card = ({img, href, description} : any) => {
 
@@ -14,4 +15,4 @@ const Card = ({img, href, description} : any) => {
     )
 }
 
-export default Card
+export default React.memo(Card)

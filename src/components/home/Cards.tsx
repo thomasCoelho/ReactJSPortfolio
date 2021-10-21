@@ -1,7 +1,7 @@
-import { useState } from "react";
 import Card from "./Card";
 import s from './Cards.module.css';
 import dataCards from '../../data/cards';
+import React from "react";
 
 
 const Cards = () => {
@@ -18,4 +18,4 @@ const Cards = () => {
     );
 }
 
-export default Cards
+export default React.memo(Cards)

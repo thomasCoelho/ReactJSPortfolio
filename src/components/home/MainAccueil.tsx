@@ -1,4 +1,5 @@
-import s from './MainAccueil.module.css'
+import React from 'react';
+import s from './MainAccueil.module.css';
 
 
 const Home = () => {
@@ -15,4 +16,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default React.memo(Home)

@@ -1,4 +1,4 @@
-let dataCards = [
+const dataCards = [
     {
         img : "src/assets/images/card/vieux-cafe-s.jpg",
         url: "https://p4thomascoelho.fr/P5/",
